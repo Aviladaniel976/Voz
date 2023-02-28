@@ -1,0 +1,264 @@
+<%- include("partials/header.ejs") -%>
+    
+<div class="container">
+    <main>
+  
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary new-color">Progreso</span>
+            <span class="badge bg-primary rounded-pill new-color-background">      90%</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Introducción</h6>
+                <small class="text-muted">Presentación al estudio.</small>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div>
+                <h6 class="my-0">Segmento Demográfico</h6>
+                <small class="text-muted">Datos Personales</small>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Segmento de interés</h6>
+                <small class="text-muted">Cuestionario</small>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Final</h6>
+                <small class="text-muted">Cierre de la encuesta</small>
+              </div>
+            </li>
+          </ul>
+  
+        <div class="col-md-7 col-lg-8">
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="my-3">
+                <label class="form-check-label" for="credit" style="margin-bottom: 2%;">Seleccióne la organización donde trabajas actualmente: </label>
+                <div class="set form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input drum"  required>
+                    <label class="form-check-label" id="Company" for="credit">Afiliados de ANSA</label>
+                  </div>
+                  <div class="set form-check">
+                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input " required>
+                    <label class="form-check-label" for="debit">Otros</label>
+                    <input type="text" class="form-control" id="otherCompany" placeholder="" value="" required disabled="disabled">
+                  </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <label for="state" class="form-label">Selecione el área donde trabaja en la organización </label>
+                <select class="form-select" id="state" required>
+                  <option value="">Seleccione...</option>
+                  <option> Tienda/Sucursal </option>
+                  <option> Administrativo </option>
+                  <option> Centro de Distribución </option>
+                </select>
+                <div class="invalid-feedback">
+                  *Campo obligatorio!
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <label for="state" class="form-label">Selecciones su perfil</label>
+                <select class="form-select" id="state" required>
+                  <option value="">Seleccione...</option>
+                  <option> Líder de Compañía/CEO/Gerente General/ Presidente </option>
+                  <option> Líder de Recursos Humanos/Talento </option>
+                  <option> Miembro del equipo de Recursos Humanos/Talento </option>
+                  <option> Supervisor inmediato o persona con personal a su cargo </option>
+                  <option> Gerente de sucursal/tienda </option>
+                </select>
+                <div class="invalid-feedback">
+                  *Campo obligatorio!
+                </div>
+              </div>
+
+              <hr class="my-4">
+
+
+              <div class="col-md-6">
+                <label for="state" class="form-label">¿Que es lo que mas valoras de trabajar en esta organización?</label>
+                <select class="form-select" id="state" required>
+                  <option value="">Seleccione...</option>
+                  <option> Equilibrio vida / trabajo </option>
+                  <option> Relación con mi supervisor inmediato </option>
+                  <option> Capacitación </option>
+                  <option> Sueldo / salario </option>
+                  <option> Oportunidad de crecimiento </option>
+                  <option> Cercanía al trabajo </option>
+                  <option> Ambiente de trabajo (espacio físico de mi lugar de trabajo) </option>
+                  <option> Clima laboral </option>
+                  <option> Trato con el equipo gerencial </option>
+                  <option> Trato con compañeros de trabajo </option>
+                  <option> Valores Organizacionales </option>
+                  <option> Compensación variable </option>
+                </select>
+                <div class="invalid-feedback">
+                  *Campo obligatorio!
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <label for="email" class="form-label"> ¿Podrias darnos màs detalles? <span class="text-muted"></span></label>
+                <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+                <div class="invalid-feedback">
+                  *Campo obligatorio
+                </div>
+              </div>
+
+              <div class="col-md-12" style="margin-top: 5%;">
+                <label for="country" class="form-label" style="margin-right:15.5% ;">Los gerentes me tratan correctamente</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option3">
+                  <label class="form-check-label" for="inlineRadio1">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option4">
+                  <label class="form-check-label" for="inlineRadio2">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option5">
+                  <label class="form-check-label" for="inlineRadio2">5</label>
+                </div>
+                <div class="invalid-feedback">
+                    *Campo obligatorio!
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="country" class="form-label" style="margin-right:6% ;">Mi supervisor inmediato me tratan correctamente</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option3">
+                  <label class="form-check-label" for="inlineRadio1">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option4">
+                  <label class="form-check-label" for="inlineRadio2">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option5">
+                  <label class="form-check-label" for="inlineRadio2">5</label>
+                </div>
+                <div class="invalid-feedback">
+                    *Campo obligatorio!
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="country" class="form-label" style="margin-right:12.5% ;">Mis compañeros me tratan correctamente</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option3">
+                  <label class="form-check-label" for="inlineRadio1">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option4">
+                  <label class="form-check-label" for="inlineRadio2">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option5">
+                  <label class="form-check-label" for="inlineRadio2">5</label>
+                </div>
+                <div class="invalid-feedback">
+                    *Campo obligatorio!
+                </div>
+              </div>
+
+              <hr class="my-4">
+
+
+              <div class="col-md-6">
+                <label for="country" class="form-label">Mi organización reconoce el desempeño al igual que la meritocracia</label>
+                <select class="form-select" id="state" required>
+                  <option value="">Seleccione...</option>
+                  <option> Totalmente de Acuerdo </option>
+                  <option> De Acuerdo </option>
+                  <option> Ni de acuerdo ni en desacuerdo </option>
+                  <option> En desacuerdo </option>
+                  <option> Totalmente en desacuerdo  </option>
+                </select>
+                <div class="invalid-feedback">
+                  *Campo obligatorio!
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <label for="country" class="form-label">Podrìa estar mejor trabajando en otra organización (Inscore)</label>
+                <select class="form-select" id="state" required>
+                  <option value="">Seleccione...</option>
+                  <option> Totalmente de Acuerdo </option>
+                  <option> De Acuerdo </option>
+                  <option> Ni de acuerdo ni en desacuerdo </option>
+                  <option> En desacuerdo </option>
+                  <option> Totalmente en desacuerdo  </option>
+                </select>
+                <div class="invalid-feedback">
+                  *Campo obligatorio!
+                </div>
+              </div>
+  
+              <div class="col-md-12">
+                <label for="email" class="form-label"> ¿Aparte de esta organizacion, cual otra consideras que es un excelente lugar para trabajar? <span class="text-muted"></span></label>
+                <textarea class="form-control" name="postBody" rows="5" cols="30" ></textarea>
+                <div class="invalid-feedback">
+                  *Campo obligatorio
+                </div>
+              </div>
+              
+              <br>
+
+              <div class="col-md-12">
+                <label for="email" class="form-label"> ¿Cuál es el Impacto de su organización hacia la comunidad? (Inscore) <span class="text-muted"></span></label>
+                <textarea class="form-control" name="postBody" rows="5" cols="30" ></textarea>
+                <div class="invalid-feedback">
+                  *Campo obligatorio
+                </div>
+              </div>
+  
+
+  
+  
+              <form class="card p-2" action="/final" method="post">
+                <div class="input-group d-grid gap-2">
+                  <button type="submit" class="btn btn-secondary new-color-background">Finalizar</button>
+                </div>
+              </form>
+          </form>
+        </div>
+      </div>
+    </main>
+  
+</div>
+ 
+
+
+<%- include("partials/footer.ejs") -%>

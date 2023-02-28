@@ -1,0 +1,59 @@
+<%- include("partials/header.ejs") -%>
+
+
+
+<div class="container">
+    <main>  
+      <div class="row g-5">
+        <div class="col-md-12 col-lg-4 order-md-last">
+          <h5>¿Quieres un lugar de trabajo increíble? Contesta esta encuesta.</h5>
+          <h7 class="lead">¡Trabajemos juntos para crear un gran lugar de trabajo!</h7>
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary new-color">Progreso</span>
+            <span class="badge bg-primary rounded-pill new-color-background">25%</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div>
+                <h6 class="my-0">Introducción</h6>
+                <small class="text-muted">Presentación al estudio.</small>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Segmento Demográfico</h6>
+                <small class="text-muted">Datos Personales</small>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Segmento de interés</h6>
+                <small class="text-muted">Cuestionario</small>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Final</h6>
+                <small class="text-muted">Cierre de la encuesta</small>
+              </div>
+            </li>
+          </ul>
+  
+          <form class="card p-2" action="/page1" method="post">
+            <div class="input-group d-grid gap-2">
+              <button type="submit" class="btn btn-secondary new-color-background">Continuar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-12 col-lg-8">
+          <video class="voz" autoplay muted >
+                <source src="/videos/voz_Video.mp4" type="video/mp4">
+                Tu navegador no es compatible.
+            </video>
+        </div>
+      </div>
+    </main>
+  
+
+
+<%- include("partials/footer.ejs") -%>
